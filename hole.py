@@ -6,14 +6,14 @@ from matplotlib.ticker import LinearLocator
 plt.close('all')
 rh = 50e-6
 ti = .008
-q = 13
+q = 9
 
 def loss(rh, rspot):
     r = rh/rspot
     return 1 - np.exp(-4 * r ** 2)
 def outcouple(rh, rspot, q):
-    r = rh/rspot
-    return np.exp(-4 * q ** 2 * r ** 2)
+    r = rh/rspot * q
+    return  1- np.exp(-2  * r ** 2)
 
 r = np.linspace(.1,3, 100)*10**-3
 
