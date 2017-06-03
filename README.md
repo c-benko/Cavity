@@ -8,7 +8,7 @@ Simulations of various important properties of femtosecond enhancement cavities.
 
 `cavity_pulse.py` runs a simulation of the circulating intracavity pulse as a function of cavity mirrors, input pulse duration and spectral bandwidth and outputs the circulating intracavity spectrum and pulse. 
 
-`\Data` contains dispersion data of the mirrors used in the experiments. 
+`Data/` contains dispersion data of the mirrors used in the experiments. 
 
 `plotter.py` is just a display function.
 
